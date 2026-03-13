@@ -1,0 +1,117 @@
+.footer {
+  margin-top: auto;
+  padding-top: var(--spacing-12);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.footer-brand p {
+  color: var(--color-text-muted);
+  max-width: 300px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4);
+}
+
+.link-group h4 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-4);
+  font-size: 1.125rem;
+}
+
+.link-group a {
+  display: block;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-2);
+  font-size: 0.875rem;
+}
+
+.link-group a:hover {
+  color: var(--color-primary-hover);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-normal);
+}
+
+.social-links a:hover {
+  background: rgba(139, 92, 246, 0.2);
+  color: var(--color-primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px var(--color-primary-glow);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: var(--spacing-4) 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.profile-links {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--spacing-3) !important;
+}
+
+.profile-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: var(--spacing-3) !important;
+  text-decoration: none !important;
+  color: var(--color-text-muted) !important;
+  width: auto !important;
+  border-radius: var(--radius-sm) !important;
+  background: transparent !important;
+  padding: var(--spacing-2) !important;
+  transition: all var(--transition-normal) !important;
+  justify-content: flex-start !important;
+}
+
+.profile-link span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color var(--transition-normal);
+}
+
+.profile-link:hover {
+  background: rgba(139, 92, 246, 0.1) !important;
+  transform: translateX(5px) !important;
+  box-shadow: none !important;
+}
+
+.profile-link:hover span {
+  color: var(--color-primary-hover);
+}

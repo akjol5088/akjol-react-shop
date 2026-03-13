@@ -1,0 +1,109 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: var(--spacing-4) 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.akjol-brand {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+.brand-icon {
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-6);
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-shadow: 0 0 8px var(--color-primary-glow);
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.github-link:hover {
+  color: var(--color-primary-hover);
+  text-shadow: 0 0 8px var(--color-primary-glow);
+}
+
+.language-selector {
+  background: rgba(24, 24, 27, 0.8);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.language-selector:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px var(--color-primary-glow);
+}
+
+.language-selector option {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+
+.cart-link:hover {
+  transform: scale(1.1);
+  color: var(--color-primary-hover);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px var(--color-accent-glow);
+}
