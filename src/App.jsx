@@ -4,14 +4,16 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
+import { ThemeProvider } from './context/ThemeContext';
 import { CartProvider } from './context/CartContext';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <LanguageProvider>
-      <CartProvider>
-        <BrowserRouter>
+    <ThemeProvider>
+      <LanguageProvider>
+        <CartProvider>
+          <BrowserRouter>
           <div className="app-container">
             <Navbar />
             <main className="main-content">
@@ -24,8 +26,9 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-      </CartProvider>
-    </LanguageProvider>
+        </CartProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

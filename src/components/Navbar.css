@@ -121,3 +121,25 @@
   justify-content: center;
   box-shadow: 0 0 10px var(--color-accent-glow);
 }
+
+.theme-toggle {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--color-primary-hover);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary-glow);
+  transform: scale(1.05);
+}
